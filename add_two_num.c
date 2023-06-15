@@ -6,16 +6,11 @@
  * };
  */
 
-// Definition for singly-linked list.
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 struct ListNode {
     int val;
     struct ListNode *next;
 };
- 
+
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2){
     
     int mult = 1;
@@ -54,7 +49,6 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2){
         (*prev).next = next_num;
         prev = next_num;
     }
-
     (*prev).next = NULL;
 
     return result;
